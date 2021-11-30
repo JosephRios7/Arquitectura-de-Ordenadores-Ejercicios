@@ -18,13 +18,13 @@ end Behavioral;
 
 ---------------
 
-entity Mux is port(
+entity Mux1 is port(
 a,b,c,d,s: in std_logic_vector(1 downto 0);
 Z: out std_logic_vector (1 downto 0) );
 
-end Mux;
+end Mux1;
 
-architecture Behavioral of Mux is
+architecture Behavioral2 of Mux1 is
 begin 
 	process (s) begin
 	case s is 
@@ -34,5 +34,5 @@ begin
 	when others => z <= d;
 	end case;
 	end process;
-end Behavioral;
+end Behavioral2;
 
